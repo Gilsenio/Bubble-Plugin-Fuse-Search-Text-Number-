@@ -1,0 +1,253 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "List Fuse Search",
+    "fields": {
+        "AAD": {
+            "caption": "Type of Content",
+            "editor": "custom_type",
+            "name": "data_type",
+            "rank": 0
+        },
+        "AAE": {
+            "caption": "data_source",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "data_source",
+            "rank": 1,
+            "value": "custom_data_AAD"
+        },
+        "AAF": {
+            "caption": "Search value",
+            "doc": "Select here the value of the input that will perform the searches.",
+            "editor": "DynamicValue",
+            "field_type_restriction": "text_image_file",
+            "name": "input",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "Input ID",
+            "doc": "Input ID to transform into Search Box",
+            "editor": "DynamicValue",
+            "field_type_restriction": "text_image_file",
+            "name": "input_id",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Basic Options",
+            "editor": "Label",
+            "field_type_restriction": "text_image_file",
+            "name": "Option",
+            "optional": true,
+            "rank": 4
+        },
+        "AAI": {
+            "caption": "Is Case Sensitive",
+            "default_val": false,
+            "doc": "Indicates whether comparisons should be case sensitive.",
+            "editor": "Checkbox",
+            "field_type_restriction": "text_image_file",
+            "name": "isCaseSensitive",
+            "optional": true,
+            "rank": 5
+        },
+        "AAJ": {
+            "caption": "Include Score",
+            "default_val": false,
+            "doc": "Whether the score should be included in the result set. A score of 0indicates a perfect match, while a score of 1 indicates a complete mismatch.",
+            "editor": "Checkbox",
+            "field_type_restriction": "text_image_file",
+            "name": "includeScore",
+            "optional": true,
+            "rank": 6
+        },
+        "AAK": {
+            "caption": "Include Matches",
+            "default_val": false,
+            "doc": "Whether the matches should be included in the result set. When true, each record in the result set will include the indices of the matched characters. These can consequently be used for highlighting purposes.",
+            "editor": "Checkbox",
+            "name": "includeMatches",
+            "rank": 7,
+            "value": "text"
+        },
+        "AAL": {
+            "caption": "Min Match Char Length",
+            "default_val": 1,
+            "doc": "Only the matches whose length exceeds this value will be returned. (For instance, if you want to ignore single character matches in the result, set it to 2).",
+            "editor": "DynamicValue",
+            "name": "minMatchCharLength",
+            "rank": 8,
+            "value": "number"
+        },
+        "AAM": {
+            "caption": "Find All Matches",
+            "default_val": false,
+            "doc": "When true, the matching function will continue to the end of a search pattern even if a perfect match has already been located in the string.  #keys",
+            "editor": "Checkbox",
+            "name": "findAllMatches",
+            "rank": 9
+        },
+        "AAN": {
+            "caption": "Fuzzy Matching Options",
+            "editor": "Label",
+            "name": "Fuzzy Matching Options",
+            "rank": 10
+        },
+        "AAO": {
+            "caption": "Location",
+            "default_val": 0,
+            "doc": "Determines approximately where in the text is the pattern expected to be found",
+            "editor": "DynamicValue",
+            "name": "location",
+            "rank": 11,
+            "value": "number"
+        },
+        "AAP": {
+            "caption": "Number of characters",
+            "default_val": 0.3,
+            "doc": "At what point does the match algorithm give up. A threshold of 0.0 requires a perfect match (of both letters and location), a threshold of 1.0 would match anything.",
+            "editor": "DynamicValue",
+            "name": "threshold",
+            "rank": 12,
+            "value": "number"
+        },
+        "AAQ": {
+            "caption": "Distance",
+            "default_val": 100,
+            "doc": "Determines how close the match must be to the fuzzy location (specified by location). An exact letter match which is distance characters away from the fuzzy location would score as a complete mismatch. A distance of 0 requires the match be at the exact location specified. A distance of 1000 would require a perfect match to be within 800 characters of the location to be found using a threshold of 0.8.",
+            "editor": "DynamicValue",
+            "name": "distance",
+            "rank": 13,
+            "value": "number"
+        },
+        "AAR": {
+            "caption": "Ignore Location",
+            "default_val": false,
+            "doc": "When true, search will ignore location and distance, so it won't matter where in the string the pattern appears.",
+            "editor": "Checkbox",
+            "name": "ignoreLocation",
+            "rank": 14,
+            "value": "text"
+        },
+        "AAS": {
+            "caption": "Fields Search",
+            "editor": "Label",
+            "name": "Fields Search",
+            "optional": true,
+            "rank": 15,
+            "value": "text"
+        },
+        "AAW": {
+            "caption": "1º Search field (text)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "text_image_file",
+            "name": "field_1",
+            "optional": false,
+            "rank": 16
+        },
+        "AAX": {
+            "caption": "2º Search field (text)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "text_image_file",
+            "name": "field_2",
+            "optional": true,
+            "rank": 17
+        },
+        "AAY": {
+            "caption": "3º Search field (text)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "text_image_file",
+            "name": "field_3",
+            "optional": true,
+            "rank": 18
+        },
+        "AAZ": {
+            "caption": "4º Search field (text)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "text_image_file",
+            "name": "field_4",
+            "optional": true,
+            "rank": 19
+        },
+        "AAa": {
+            "caption": "5º Search field (text)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "text_image_file",
+            "name": "field_5",
+            "optional": true,
+            "rank": 20
+        },
+        "AAb": {
+            "caption": "6º Search field (number)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "number",
+            "name": "field_6",
+            "optional": true,
+            "rank": 21
+        },
+        "AAc": {
+            "caption": "7º Search field (number)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "number",
+            "name": "field_7",
+            "optional": true,
+            "rank": 22
+        },
+        "AAd": {
+            "caption": "8º Search field (number)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "number",
+            "name": "field_8",
+            "optional": true,
+            "rank": 23
+        },
+        "AAe": {
+            "caption": "9º Search field (number)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "number",
+            "name": "field_9",
+            "optional": true,
+            "rank": 24
+        },
+        "AAf": {
+            "caption": "10º Search field (number)",
+            "editor": "custom_field_AAD",
+            "field_type_restriction": "number",
+            "name": "field_10",
+            "optional": true,
+            "rank": 25
+        }
+    },
+    "icon": "ion-ios-search",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAT": {
+            "caption": "Data source",
+            "doc": "Data Source with and without search",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "result",
+            "value": "custom_data_AAD"
+        },
+        "AAU": {
+            "caption": "Count Found Objects",
+            "doc": "Returns the number of objects found after the search",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn 0;\n\n}"
+            },
+            "name": "count",
+            "value": "number"
+        }
+    }
+}

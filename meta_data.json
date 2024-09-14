@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "technical",
+        "1": "productivity",
+        "2": "data (things)"
+    },
+    "demo_page": "https://help-comunidadesc.bubbleapps.io/version-test/fuse-search?debug_mode=true",
+    "description": "This plugin allows you to perform a Fuzzy Search in a dataset or data source.\n\n\nPlease read the documentation (in the plugin), the Bubble Editor and the example at the Service URL:\n\nEditor, documentation, step-by-step and example:\nhttps://bubble.io/page?id=help-comunidadesc&tab=tabs-1&name=fuse-search&type=page\n\nDemo page:\nhttps://help-comunidadesc.bubbleapps.io/version-test/fuse-search?debug_mode=true",
+    "image": "//meta-q.cdn.bubble.io/f1726257914162x418726031077006460/I%CC%81cone%20de%20busca.svg",
+    "license": "open_source",
+    "link": "https://bubble.io/page?id=help-comunidadesc&tab=tabs-1&name=fuse-search&type=page",
+    "name": "Fuse Search (Text, Number)",
+    "plugin_instructions": "Please read the documentation (in the plugin), the Bubble Editor and the example at the Service URL:\n\nEditor, documentation, step-by-step and example:\nhttps://bubble.io/page?id=help-comunidadesc&tab=tabs-1&name=fuse-search&type=page\n\nDemo page:\nhttps://help-comunidadesc.bubbleapps.io/version-test/fuse-search?debug_mode=true"
+}
